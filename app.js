@@ -8,6 +8,15 @@ const app = Vue.createApp({
       picture: "/janeDoe.jpg",
     };
   },
+  methods: {
+    getUser() {
+      (this.firstName = "Sam"),
+        (this.lastName = "Smith"),
+        (this.email = "sam@gmail.com"),
+        (this.gender = "male"),
+        (this.picture = "/samSmith.jpg");
+    },
+  },
 });
 
 app.mount("#app");
